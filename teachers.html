@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>الهيئة التعليمية</title>
+  <link rel="stylesheet" href="structure.css">
+</head>
+<style>
+p{
+  margin-right: 10px;
+}
+.title{
+    width: 100%;
+    line-height: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 8px 0px rgb(0,0,0);
+    background-color: #3499DB;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding-bottom: 6px;
+}
+.title p{
+  line-height: 25px;
+  margin-right: 5px;
+  margin-left:5px;
+}
+.title h2{
+  padding-top:15px;
+}
+section{
+  min-height: 600px;
+}
+section h4{
+  text-shadow: 1px 1px 10px #000;
+}
+section img{
+  padding: 0px;
+  margin: 0px;
+  width: 30%;
+  height: 90%;
+  border-radius: 50%;
+  transform: translate(20%, 30%);
+  box-shadow: 1px 1px 10px 0px #000;
+}
+.card{
+  font-size: 100%;
+  border-radius: 30px;
+  width: 80%;
+  background-color: #f2f6fc;
+  display: flex;
+  box-shadow: 1px 1px 10px 0px #000;
+}
+ .ps p{
+  color: #000;
+}
+.email{
+  font-size: 100%;
+}
+@media (min-width: 800px){
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  section{
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 100%:
+    margin-left:10px;
+    margin-right:10px;
+  }
+  section img{
+    transform: translate(0px, 10px);
+    margin-left: 20px;
+    width: 30%;
+    height: 90%;
+  }
+}
+@media (min-width: 1400px){
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  main section{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  section img{
+    transform: translate(-3px, 10px);
+  }
+}
+@media (min-width: 500px) and (max-width: 800px){
+  section img{
+    transform: translate(0px, 3px);
+  }
+}
+</style>
+<body>
+    <header>
+    <h4>الافق الجديد</h4>
+    <div class="out">
+      <label for="menu"><img src="pic/menuic.png" alt="〣"></label>
+      <input type="checkbox" id="menu">
+    <nav>
+      <ul>
+        <li class="subject"><a href="index.html">الرئيسية</a></li>
+        <li class="register"><a href="register.html">تسجيل</a></li>
+        <li class="subjects"><a href="subjects.html">المهارات</a></li>
+        <li class="Contact"><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+    <div class="clear"></div>
+    <div class="title">
+      <h2>نقدم لك خبراءنا</h2>
+      <p>هنا ستتعرف على افضل المتخصصين في مجالاتهم، سيكونون معك طوال رحلتك لاكتساب مهارتك، حرصنا على اختيار افضل الافضل، صنعوا التاريخ في تخصصات وابدعوا وصنعوا تأثيرا كبيرا، وها هم هنا ليفعلوا نفس الشيء معك، ماذا تنتظر، سجل الان ...</p>
+    </div>
+    <main>
+      <section class="teach">
+        <h4>محمد السالمي</h4>
+        <div class="card">
+          <img src="pic/pers1.jpg" alt="صورة ل'محمد السالمي'">
+          <div class="ps">
+          <p>أستاذ التسويق الرقمي</p>
+          <p class="email">mhalsalmi@horizon.com</p>
+          <p>+966 11 222 4444</p>
+          </div>
+        </div>
+        <p> محمد السالمي خبير معتمد في التسويق الرقمي، بخبرة تتجاوز 12 عامًا في تطوير الحملات الإعلانية وتحليل سلوك السوق.  
+عمل مع شركات محلية ودولية، ودرّب مئات الطلاب على تحويل أفكارهم إلى خطط تسويق ناجحة.  
+يعتمد في تدريسه على التطبيق العملي، ويقدّم أدوات حقيقية يستخدمها المحترفون في الميدان.  
+يركّز على بناء العلامة التجارية، وفهم الجمهور، والتعامل مع الإعلانات المدفوعة بذكاء.  
+أسلوبه واضح، حديث، ويجمع بين الإبداع والتحليل المنطقي.  
+معه، لا تتعلم التسويق فقط… بل تتقنه بثقة.</p>
+        <button class="btn"><a href="register.html">تسجيل</a></button>
+      </section>
+      <section class="teach">
+        <h4>خالد العوفي</h4>
+        <div class="card">
+          <img src="pic/pers2.jpg" alt="صورة ل'خالد العوفي'">
+          <div class="ps">
+          <p>فنان في البيع والعرض</p>
+          <p class="email">khalidawf@horizon.com</p>
+          <p class="last">+971 88 777 6666</p>
+          </div>
+        </div>
+        <p> خالد العوفي مدرّب محترف في مهارة العرض والبيع، يمتلك أكثر من 8 سنوات من الخبرة في تدريب الأفراد والفرق على فنون التأثير والإقناع.  
+يعلّم طلابه كيف يحوّلون أفكارهم إلى عروض تُبهر، وتُقدَّم بثقة واحتراف.  
+خبرته تمتد إلى تطوير مهارات التحدث أمام الجمهور، وبناء العروض التي تُغلق الصفقات.  
+يركّز على الجانب العملي، ويقدّم تقنيات نفسية ولغوية تساعد المتعلّم على كسب انتباه العميل وإقناعه.  
+أسلوبه تحفيزي، مباشر، ويعكس الواقع الحقيقي لسوق البيع والتواصل.  
+معه، يتعلّم الطالب كيف يبيع نفسه قبل أن يبيع فكرته.</p>
+        <button class="btn"><a href="register.html">تسجيل</a></button>
+      </section>
+      <section class="teach">
+        <h4>احمد الزهري</h4>
+        <div class="card">
+          <img src="pic/pers3.jpg" alt="صورة ل'احمد الزهري'">
+          <div class="ps">
+          <p>مستثمر محترف</p>
+          <p class="email">ah.alzahri@horizon.com</p>
+          <p class="last">+962 89 567 1234</p>
+          </div>
+        </div>
+        <p>أحمد الزهراني خبير في الاستثمار والأسواق المالية، يتمتّع بخبرة تزيد عن 15 عامًا في تحليل الأسواق وبناء المحافظ الاستثمارية.  
+درّب العديد من الشباب وروّاد الأعمال على اتخاذ قرارات استثمارية ذكية مبنية على فهم وتحليل حقيقي.  
+يعتمد أسلوبه على التبسيط دون تفريط، حيث يشرح المفاهيم المالية بلغة واقعية وسهلة التطبيق.  
+يركّز على تعلّم إدارة المخاطر، قراءة السوق، وتحديد الفرص التي تصنع الفرق.  
+أسلوبه يجمع بين الحكمة العملية والرؤية المستقبلية، ويغرس في الطالب عقلية المستثمر الناجح.  
+معه، لا تتعلّم فقط كيف تستثمر… بل كيف تفكّر كأنك أحد كبار المستثمرين.</p>
+        <button class="btn"><a href="register.html">تسجيل</a></button>
+      </section>
+      <section class="teach">
+        <h4>فهد الحربي</h4>
+        <div class="card">
+          <img src="pic/pers4.jpg" alt="صورة ل'فهم الحربي'">
+          <div class="ps">
+          <p>خبير في التخطيط المالي</p>
+          <p class="email">fahd.bus@horizon.com</p>
+          <p class="last">+974 33 666 999</p>
+          </div>
+        </div>
+        <p>فهد الحربي خبير في التخطيط المالي والرؤية الاستراتيجية للموارد، يمتلك خبرة واسعة تتجاوز 12 عامًا في إدارة الميزانيات وبناء الخطط المالية الشخصية والمهنية.  
+ساعد مئات المتدربين على التحكّم بأموالهم، ووضع أهداف مالية واقعية قابلة للتحقيق.  
+يقدّم أدوات فعالة لتنظيم الدخل، تقليل المصروفات، وتحديد الأولويات المالية بوضوح.  
+أسلوبه عملي مبني على خطوات مدروسة تناسب مختلف الأعمار والظروف.  
+يركّز على بناء وعي مالي مستدام، يمنح المتعلّم سيطرة حقيقية على مستقبله الاقتصادي.  
+معه، يتعلّم الطالب كيف يرسم طريقه المالي بثبات وثقة.</p>
+        <button class="btn"><a href="register.html">تسجيل</a></button>
+      </section>
+      <section class="teach">
+        <h4>مازن العنزي</h4>
+        <div class="card">
+          <img src="pic/pers5.jpg" alt="صورة ل'مازن العنزي'">
+         <div class="ps">
+          <p>فنان في التواصل الفعال</p>
+          <p class="email">mazintanz@horizon.com</p>
+          <p class="last">+964 000 000 0000</p>
+          </div>
+        </div>
+        <p>مازن العنزي خبير في فن التواصل، يمتلك خبرة عميقة في تدريب الأفراد على بناء علاقات قوية ومؤثرة.  
+درب طلابًا وموظفين على مهارات التحدث بثقة، والاستماع الفعّال، واختيار الكلمات التي تصنع فارقًا.  
+يعتمد أسلوبًا تدريبيًا تفاعليًا يمكّن المتعلّم من تطبيق المهارة في الحياة اليومية والمهنية.  
+يركّز على لغة الجسد، نبرة الصوت، والتحكم بالعاطفة أثناء الحديث والتفاوض.  
+برؤيته العملية، يساعدك على تجاوز التوتر والتواصل بوضوح حتى في المواقف الصعبة.  
+معه، تصبح الكلمة أداة قوة، والتواصل مهارة تفتح لك الأبواب.</p>
+        <button class="btn"><a href="register.html">تسجيل</a></button>
+      </section>
+      <section class="teach">
+        <h4>أنس الفيفي</h4>
+        <div class="card">
+          <img src="pic/pers6.jpg" alt="صورة ل'أنس الفيفي'">
+          <div class="ps">
+          <p>متخصص في ادارة الوقت</p>
+          <p class="email">an.fefe0@horizon.com</p>
+          <p class="last">+20 33 5647 1234</p>
+          </div>
+        </div>
+        <p>أنس الفيفي خبير معتمد في إدارة الوقت، يمتلك خبرة تزيد عن 10 سنوات في تدريب الأفراد على تنظيم يومهم وتحقيق أقصى إنتاجية.  
+يعلّم طلابه كيف يتحكمون في ساعاتهم، ويتجنبون التسويف والضغوط اليومية بفعالية.  
+يعتمد في تدريسه على تقنيات مثبتة تساعد على التخطيط الذكي واستخدام الأدوات الرقمية والتقليدية لتنظيم الوقت.  
+يركّز على بناء عادات يومية مستدامة تزيد من التركيز وتقلّل من التشتّت.  
+أسلوبه تحفيزي وعملي، يزرع في المتعلّم الثقة والالتزام لتحقيق أهدافه.  
+معه، الوقت يصبح حليفًا، وليس عدوًا، في رحلة النجاح.</p>
+        <button class="btn"><a href="register.html">تسجيل</a></button>
+      </section>
+      <section class="teach">
+        <h4>بدر السلمي</h4>
+        <div class="card">
+          <img src="pic/pers7.jpg" alt="صورة ل'بدر السلمي'">
+          <div class="ps">
+          <p>أستاذ اللغة الانجليزية</p>
+          <p class="email">badrsal@horizon.com</p>
+          <p class="last">+212 9 11 00 22 99</p>
+          </div>
+        </div>
+        <p>بدر السلمي متخصص معتمد في اللغة الإنجليزية، حاصل على شهادات عالمية معترف بها، ويمتلك خبرة تزيد عن 8 سنوات في تعليم اللغة بأساليب حديثة وفعّالة.  
+يركز على تطوير مهارات التحدث، الاستماع، والكتابة بطريقة تفاعلية تناسب جميع المستويات.  
+يستخدم تقنيات تعليمية حديثة تجمع بين الممارسة العملية والمحتوى الأكاديمي المميز.  
+يساعد طلابه على تجاوز الحواجز اللغوية بثقة وسلاسة، وتحقيق طلاقة في التواصل.  
+أسلوبه مشوق ومحفز، يجعل من تعلم اللغة رحلة ممتعة وواقعية.  
+معه، اللغة الإنجليزية تصبح أداة تفتح لك أبواب العالم والفرص.</p>
+        <button class="btn"><a href="register.html">تسجيل</a></button>
+      </section>
+      <section class="teach">
+        <h4>دانيال مورغان</h4>
+        <div class="card">
+          <img src="pic/pers8.jpg" alt="صورة ل'danial morgan'">
+          <div class="ps">
+          <p>خبير عالمي</p>
+          <p class="email">morganbis@horizon.com</p>
+          <p class="last">+44 7911 123456</p>
+          </div>
+        </div>
+        <p>السيد دانيال مورغان مستشار دولي يتمتع بخبرة تزيد عن 15 عامًا في مجال التعليم الرقمي والتطوير المهني.  
+يقدم رؤية عالمية متجددة، ويُدمج أحدث الاستراتيجيات والتقنيات المعتمدة في كبرى المؤسسات التعليمية حول العالم.  
+يتخصص في تمكين المعلمين والطلاب من استخدام التكنولوجيا بفعالية لتعزيز تجربة التعلم.  
+يعتمد في تدريبه على الابتكار والأدوات العملية والأساليب التحفيزية التي تُلهم النمو الحقيقي.  
+يشتهر بأسلوبه الديناميكي وقدرته على جسر الفجوات الثقافية، ويزرع في المتعلّم عقلية التطوير المستمر.  
+معه، يحصل كل طالب على الميزة التي تؤهله للنجاح في عالم مترابط وسريع التغير.</p>
+        <button class="btn"><a href="register.html">تسجيل</a></button>
+      </section>
+    </main>
+    <footer>
+    <p>قم بزيارة حساباتنا على :</p>
+    <div class="icons">
+      <a href="https://trello.com" target="_blank"><img src="pic/trelloic.png" alt="trello"></a>
+      <a href="https://github.com" target="_blank"><img src="pic/githubic.png" alt="github"></a>
+      <a href="https://linkdin.com" target="_blank"><img src="pic/linkd.png" alt="linkdin"></a>
+    </div>
+    <p>The newhorizon &copy; 2025 - Elgy zefran</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>تواصل معنا</title>
+  <link rel="stylesheet" href="structure.css">
+</head>
+<style>
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  section{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-top:15px;
+    padding-bottom: 20px;
+    height: 80vh;
+    width: 80vw;
+  }
+  fieldset{
+    border: 1.5px solid #f6fcf2;
+    border-radius: 20px;
+  }
+  form input{
+    display: block;
+    border: 0px;
+    box-shadow: 1px 1px 5px 0px #000;
+    border-radius: 10px;
+  }
+  form input:focus, #area:focus{
+    outline: 2px solid #0ff;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #area{
+     box-shadow: 1px 1px 5px 0px #000;
+     border-radius: 10px;
+  }
+  @media (min-width: 800px){
+  section{
+    min-height: 1000px;
+    padding-bottom: 50px;
+  }
+   form{
+     width: 95%;
+     height: 95%;
+   }
+    fieldset{
+      width: 90%;
+      height: 20%;
+    }
+     #user, #emol, textarea{
+       margin-bottom: 50px;
+      width: 95%;
+      height: 80%;
+    }
+    form legend, form h4, form p{
+      font-size: 40px;
+    }
+    input[type="submit"]{
+      width: 80%;
+      height: 5%;
+    }
+  }
+   #emol:invalid, #user:invalid, #area:invalid{
+    background-color: #fb000067;
+  }
+  #emol:valid, #area:valid, #user:valid{
+    background-color: #6cff6c31;
+  }
+  input[type="submit"]{
+  margin-top: 10px;
+  background-color: #007BFF;
+  border: 0px;
+  box-shadow: 1px 1px 6px 0px #000;
+  border-radius: 10px;
+}
+#user::placeholder, #emol::placeholder, #area::placeholder{
+  padding-right: 20px;
+  font-size: 90%;
+  color: #ffffff4d;
+}
+</style>
+<body>
+    <header>
+    <h4>الافق الجديد</h4>
+    <div class="out">
+      <label for="menu"><img src="pic/menuic.png" alt="〣"></label>
+      <input type="checkbox" id="menu">
+    <nav>
+      <ul>
+        <li class="subject"><a href="index.html">الرئيسية</a></li>
+        <li class="register"><a href="register.html">تسجيل</a></li>
+        <li class="subjects"><a href="subjects.html">المهارات</a></li>
+        <li class="Contact"><a href="teachers.html">الهيئة التعليمية</a></li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+    <div class="clear"></div>
+    <main>
+      <section>
+       <form>
+         <h4>صفحة التواصل</h4>
+         <p>يمكنك مراسلتنا وارسال ملاحظاتك وآرائك، أو إذا كنت تحتاج الى مساعدة او اي شيء،</p>
+         <fieldset>
+           <legend>
+             <label for="user">أدخل اسمك</label>
+           </legend>
+           <input type="text" id="user" name="username" required placeholder="ما هو إسمك ؟ ^_^">
+         </fieldset>
+         <fieldset>
+           <legend>
+             <label for="emol">أدخل بريدك الإلكتروني</label>
+           </legend>
+           <input type="email" id="emol" name="useremail" required placeholder="ماهو بريدك الالكتروني ؟">
+         </fieldset>
+         <fieldset>
+           <legend>
+             <label for="area">أدخل رسالتك</label>
+           </legend>
+           <textarea id="area" name="usermsg" required placeholder="ماذا تود إخبارنا به ؟"></textarea>
+         </fieldset>
+         <input type="submit" value="أرسل">
+       </form>
+      </section>
+    </main>
+    <footer>
+    <p>قم بزيارة حساباتنا على :</p>
+    <div class="icons">
+      <a href="https://trello.com" target="_blank"><img src="pic/trelloic.png" alt="trello"></a>
+      <a href="https://githubm.com/elgyzefran" target="_blank"><img src="pic/githubic.png" alt="github"></a>
+      <a href="https://linkdin.com" target="_blank"><img src="pic/linkd.png" alt="linkdin"></a>
+    </div>
+    <p>The newhorizon &copy; 2025 - Elgy zefran</p>
+  </footer>
+</body>
+</html>

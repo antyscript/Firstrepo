@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="structure.css">
+</head>
+<style>
+ main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+     .first{
+    margin-top: 5%;
+    padding-top:15px;
+    padding-bottom: 20px;
+    min-height: 40vh;
+    width: 90vw;
+  }
+  #f1nal{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    min-height: 400px;
+    max-width: 95vw;
+  }
+  fieldset{
+    border: 1.5px solid #f6fcf2;
+    border-radius: 20px;
+  }
+  form input{
+    display: block;
+    border: 0px;
+    box-shadow: 1px 1px 5px 0px #000;
+    border-radius: 10px;
+  }
+  form input:focus,{
+    outline: 2px solid #0ff;
+  }
+  input[type="submit"]{}
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    margin-top: 30px;
+  }
+  @media (min-width: 800px){
+   .first form{
+     width: 95%;
+     height: 96%;
+   }
+    fieldset{
+      width: 90%;
+      height: 20%;
+    }
+     #oser, #emil{
+      margin-bottom: 50px;
+      width: 70vw;
+      height: 5vh;
+    }
+    form legend, form h4, form p, .heed{
+      font-size: 40px;
+    }
+    input[type="submit"]{
+      width: 80%;
+      min-height: 5%;
+    }
+    #f1inal{
+      min-height: 300px;
+    }
+  }
+   #emil:invalid, #oser:invalid{
+    background-color: #fb000067;
+  }
+  #emil:valid, #oser:valid{
+    background-color: #6cff6c31;
+  }
+  input[type="submit"]{
+  margin-top: 10px;
+  background-color: #007BFF;
+  border: 0px;
+  box-shadow: 1px 1px 6px 0px #000;
+  border-radius: 10px;
+}
+#oser::placeholder, #emil::placeholder{
+  padding-right: 20px;
+  font-size: 90%;
+  color: #ffffff4d;
+}
+hr{
+  width: 100%;
+  background-color: black;
+  padding: 0px;
+  margin-bottom: 6px;
+}
+#f1nal p{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.final{
+  width: 50px;
+  border-radius: 20%;
+  margin: 0px;
+  padding: 0px;
+}
+form a{
+  color: #fff;
+  text-decoration-line: underline;
+  text-decoration-color: #fff;
+}
+.heed, #f1nal p{
+  text-align: center;
+}
+.heed h4, #f1nal h4{
+  text-shadow: 1px 1px 10px #000;
+}
+input[type="radio"]{
+  box-shadow: 0px 0px 0px 0px #000;
+}
+.here{
+  display: flex;
+}
+.here input{
+  width: 30%;
+}
+</style>
+<body>
+      <header>
+    <h4>الافق الجديد</h4>
+    <div class="out">
+      <label for="menu"><img src="pic/menuic.png" alt="〣"></label>
+      <input type="checkbox" id="menu">
+    <nav>
+      <ul>
+        <li class="subject"><a href="index.html">الرئيسية</a></li>
+        <li class="subjects"><a href="subjects.html">المهارات</a></li>
+        <li class="Contact"><a href="teachers.html">الهيئة التعليمية</a></li>
+        <li class="register"><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+    <div class="clear"></div>
+    <main>
+      <section class="first">
+          <div class="heed">
+            <h4>حان وقت تسجيل الدخول ^_^</h4>
+            <p>انت على بعد خطوة واحدة من الإستفادة من جميع المزايا الخاصة بنا، من مهارات قوية عالميا ستتعلمها، الى اساتذة معتمدين بحانبك، سجل الان</p>
+          </div>
+        <form action="#f1nal">
+          <fieldset>
+            <legend>
+              <label for="oser">إسم المستخدم</label>
+            </legend>
+            <input type="user" required name="nameuser" id="oser" placeholder="إسم المستخدم الخاص بك">
+          </fieldset>
+          <fieldset>
+            <legend>
+              <label for="emil">بريدك الإلكتروني</label>
+            </legend>
+            <input type="email" required name="emailuser" id="emil" placeholder="أدخل بريدك الإلكتروني">
+          </fieldset>
+          <fieldset class="here">
+            <legend>ما هو جنسك ؟</legend>
+            <label for="female">أنثى</label>
+            <input type="radio" name="gender" id="female">
+            <label for="male">ذكر</label>
+            <input type="radio" name="gender" checked id="male">
+          </fieldset>
+           <p><a href="#f1nal">تواجه مشكلة ؟</a></p>
+          <hr>
+          <input type="submit" value="سجل">
+        </form>
+      </section>
+      <section id="f1nal">
+        <h4>مرحبا مجددا</h4>
+        <p>يسرني انك هنا، واطعلت على هذا المشروع البسيط، هذا مشروع وهمي لمدرسة وهمية، وليس حقيقيا، انا مبتدئ في التصميم وتطوير المواقع، احاول قدر الامكان التعلم كل يوم وصنع مشاريع، لتعلم هذا المجال الجميل، اشكرك على قراءة هذا وقراءة كل ما سبق، واشكرك ايضا اذا اطلعت على الكود البرمجي، قد لا يكون الكود الخاص بي، واضحا او حتى مليئا بالاخطاء الغير المرئية، او انني لم اصمم موقعا وهميا مدهشا بالمعنى الحقيقي، الا ان هذا شيء افتخر به وانا على مسيرتي في التعلم، شكرا مجددا واخيرا، 
+        يمكنك زيارة حسابي من هنا، ان كان مازال يعمل، اراك لاحقا ...</p>
+        <a href="https://github.com/elgyzefran"><img src="pic/githubic.png" alt="اضغط للتحقق" class="final"></a>
+      </section>
+    </main>
+    <footer>
+    <p>قم بزيارة حساباتنا على :</p>
+    <div class="icons">
+      <a href="https://trello.com" target="_blank"><img src="pic/trelloic.png" alt="trello"></a>
+      <a href="https://github.com/elgyzefran"><img src="pic/githubic.png" alt="github"></a>
+      <a href="https://linkdin.com" target="_blank"><img src="pic/linkd.png" alt="linkdin"></a>
+    </div>
+    <p>The newhorizon &copy; 2025 - Elgy zefran</p>
+    <p>تم التصميم فقط بhtml و css، شكرا لتواجدك هنا</p>
+  </footer>
+</body>
+</html>
