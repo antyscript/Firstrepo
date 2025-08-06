@@ -1,3 +1,3 @@
-# My-fr-project
-مرحبا بك، هذا اول مشروع اضعه في github، عبارة موقع وهمي لمدرسة وهمية باسم "مدرسة الافق الجديد" ... 
-اتمنى ان يعجبك، نأسف اذا كانت هناك أخطاء مفاجئة في العمل
+# My-fr-repo
+that is my first repository on github.
+<a href="https://antyscript.github.io/my-fr-project">Go to the website</a>
